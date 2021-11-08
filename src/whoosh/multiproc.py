@@ -26,7 +26,7 @@
 # policies, either expressed or implied, of Matt Chaput.
 
 from __future__ import with_statement
-from multiprocessing import Process, Queue, cpu_count
+from billiard import Process, Queue, cpu_count
 
 from whoosh.compat import queue, xrange, pickle
 from whoosh.codec import base
